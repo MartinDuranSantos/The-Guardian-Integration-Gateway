@@ -1,0 +1,26 @@
+[
+  {
+    "audit_id": "dba7b5ea-8a1f-4016-aa07-6a0d667510f3",
+    "timestamp": "2026-09-02T08:19:50.961048+00:00",
+    "user_id": "usr_42",
+    "original_message_encrypted": "gAAAAABql9wm378-KJ_ydGmTcmlVUw_BvZ8nHbJI7hFxRyNT7WoTDYoF-gauDAWmBNecpRW2egqzo5PLyHSo03N3AQOsWR-5DtZjlkm06AbSxf7OtjJWCzQ80_aWf4HEIfXRdnm63_hWHVnaNhr_Xojjc6V9j6fce-9RviK5y6RgSYo5YKycB-3kd3v5XHxJzfKWuGKTgZ2N6z0WyK6aV4JPxAzZcPOm0_JSfp4EVrMFWfhVMaH7kZmP_GMbf7gZ_xiEm2c20XBb",
+    "sanitized_message_plaintext": "Hello, my email is <REDACTED: EMAIL>, my SSN is <REDACTED: SSN>, and my credit card is <REDACTED: CREDIT_CARD>. Can you help me with my account?",
+    "redactions_found": [
+      "CREDIT_CARD",
+      "SSN",
+      "EMAIL"
+    ]
+  },
+  {
+    "audit_id": "0eebe5c3-ca3d-466a-8cfc-d816e254e1f6",
+    "timestamp": "2026-09-02T08:25:56.865552+00:00",
+    "user_id": "usr_42",
+    "original_message_encrypted": "gAAAAABql92Um_nq-DMIf5npQ4Kn1XWVzfluAjqVYxoYq8lsQAyaDJS-zj6gr4xj8utJh__J2LZEMcYpDunSgyszYSV-49EX3YciHIqQO6wz9weZ2r-yY78lKIm_ED-_dz-V9VJWL3QZzWDuoFesPuhib0yxUQFnRlxf1XL7Kbce2UjD4_Wo-aBna_F9ZvuHrH1nc_a-4-TaLRScip80kLXXQpxntNsbOz7FWWszoUGBC7Kea5de91_U8C9r1GG5V8F4VvbPCqU7",
+    "sanitized_message_plaintext": "Hello, my email is <REDACTED: EMAIL>, my SSN is <REDACTED: SSN>, and my credit card is <REDACTED: CREDIT_CARD>. Can you help me with my account?",
+    "redactions_found": [
+      "CREDIT_CARD",
+      "SSN",
+      "EMAIL"
+    ]
+  }
+]
