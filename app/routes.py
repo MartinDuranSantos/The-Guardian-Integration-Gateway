@@ -4,9 +4,12 @@ from app.schemas import InquiryRequest, InquiryResponse
 from app.sanitizer import PiiSanitizer
 from app.ai_service import AiService
 from app.audit_service import AuditService
+from app.circuit_breaker import CircuitBreaker, CircuitBreakerOpenError
 
 router = APIRouter()
 
+# Shared circuit breaker instance (guards the mock AI call)
+circuit_breaker = CircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
 
 @router.post("/secure-inquiry", response_model=InquiryResponse)
 async def secure_inquiry(payload: InquiryRequest):
@@ -16,10 +19,16 @@ async def secure_inquiry(payload: InquiryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Sanitization failed: {str(e)}")
 
-    # Step 2: Mock AI Call (2-second simulated delay)
+    # Step 2: AI Call with Circuit Breaker
     try:
-        generated_answer = await AiService.generate_answer(sanitized_message)
+        generated_answer = await circuit_breaker.call(
+            AiService.generate_answer, sanitized_message
+        )
+    except CircuitBreakerOpenError:
+        # Circuit is OPEN → instant fallback, no 2-second timeout wait
+        generated_answer = "Service Busy"
     except Exception as e:
+        # AI call failed (circuit not yet open) — propagate as 502
         raise HTTPException(status_code=502, detail=f"AI service error: {str(e)}")
 
     # Step 3: Audit Log (encrypted original + plaintext sanitized)

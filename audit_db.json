@@ -1,9 +1,9 @@
 [
   {
-    "audit_id": "dba7b5ea-8a1f-4016-aa07-6a0d667510f3",
-    "timestamp": "2026-09-02T08:19:50.961048+00:00",
+    "audit_id": "54e8d86a-2fad-4e90-8726-c60b7c352eda",
+    "timestamp": "2026-09-02T08:59:07.436342+00:00",
     "user_id": "usr_42",
-    "original_message_encrypted": "gAAAAABql9wm378-KJ_ydGmTcmlVUw_BvZ8nHbJI7hFxRyNT7WoTDYoF-gauDAWmBNecpRW2egqzo5PLyHSo03N3AQOsWR-5DtZjlkm06AbSxf7OtjJWCzQ80_aWf4HEIfXRdnm63_hWHVnaNhr_Xojjc6V9j6fce-9RviK5y6RgSYo5YKycB-3kd3v5XHxJzfKWuGKTgZ2N6z0WyK6aV4JPxAzZcPOm0_JSfp4EVrMFWfhVMaH7kZmP_GMbf7gZ_xiEm2c20XBb",
+    "original_message_encrypted": "gAAAAABql-VbdVfjhQ6RcgB02GVxEVH8ArhEaYwvgc5-WLcioBTiBcg7PpEgMIeBQ4cjwaVduv_anC5MIAZxj4dKLawddD7SjPK_0CZJykZg6xwUTgQtK7MYJjkIQeYLJahF65DrshAHgz-2Mo9x16VQauNSru3xvsBO78tl67Uxq-OBm9qPm6YVRfJjRdBMcy1VIHyOulA84K2iMUhVEfy6wX2qHjmmVvMOUm6cC3tqxI_xi_dKO18FquEcA6xgkNYMDtsRhUfn",
     "sanitized_message_plaintext": "Hello, my email is <REDACTED: EMAIL>, my SSN is <REDACTED: SSN>, and my credit card is <REDACTED: CREDIT_CARD>. Can you help me with my account?",
     "redactions_found": [
       "CREDIT_CARD",
@@ -12,10 +12,10 @@
     ]
   },
   {
-    "audit_id": "0eebe5c3-ca3d-466a-8cfc-d816e254e1f6",
-    "timestamp": "2026-09-02T08:25:56.865552+00:00",
+    "audit_id": "1ce5d563-787d-4936-bd0b-8657dd68b4a4",
+    "timestamp": "2026-09-02T08:59:52.794436+00:00",
     "user_id": "usr_42",
-    "original_message_encrypted": "gAAAAABql92Um_nq-DMIf5npQ4Kn1XWVzfluAjqVYxoYq8lsQAyaDJS-zj6gr4xj8utJh__J2LZEMcYpDunSgyszYSV-49EX3YciHIqQO6wz9weZ2r-yY78lKIm_ED-_dz-V9VJWL3QZzWDuoFesPuhib0yxUQFnRlxf1XL7Kbce2UjD4_Wo-aBna_F9ZvuHrH1nc_a-4-TaLRScip80kLXXQpxntNsbOz7FWWszoUGBC7Kea5de91_U8C9r1GG5V8F4VvbPCqU7",
+    "original_message_encrypted": "gAAAAABql-WIeFvfmwFD3DVsreSqGoEAOcw4EMttsyAXv1cnDD_4gu_hgbzB5caxq4b6hwqElIlGFaSBrAAPCOynKh3euUM9oO3Tc93q7H3LdphihkJD7PHJeFulNa1SQekSbJ95YK-VazwWinV5QgCbztoozNFcEGm_c_-xAwIliRMT8ncFE_PQ1UHYfw16YRudSQCUCMdP7l-sSDyyQPuVVmXuWOWyred041_c9nFCu3rML9RNQVC4xP4bgdrGqe6TTCwxfygO",
     "sanitized_message_plaintext": "Hello, my email is <REDACTED: EMAIL>, my SSN is <REDACTED: SSN>, and my credit card is <REDACTED: CREDIT_CARD>. Can you help me with my account?",
     "redactions_found": [
       "CREDIT_CARD",
