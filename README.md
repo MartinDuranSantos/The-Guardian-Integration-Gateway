@@ -58,18 +58,19 @@ secure-inquiry-api/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/secure-inquiry-api.git
-cd secure-inquiry-api
+git clone https://github.com/MartinDuranSantos/The-Guardian-Integration-Gateway.git
+cd The_Guardian_Integration_Gateway
 
 # Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\Activate.ps1
 
 # Install dependencies
-pip install fastapi uvicorn requests cryptography pydantic
+pip install -r requirements.txt
 
 # Start the server
-python main.py
+cd app
+fastapi dev
 ```
 
 The API will be available at `http://localhost:8000`.
